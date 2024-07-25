@@ -1,0 +1,36 @@
+/* src/styles/fonts.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/static/Inter-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url('../assets/static/Inter-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url('../assets/static/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url('../assets/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+@layer base {
+    html {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
